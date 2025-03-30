@@ -1,0 +1,44 @@
+<form id="registrationForm" class="registration-form">
+    <h2>新会员注册</h2>
+    
+    <!-- 姓名 -->
+    <div class="form-group">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+        <div class="error-message" id="nameError"></div>
+    </div>
+
+    <!-- 道号 -->
+    <div class="form-group">
+        <label for="daoName">道号：</label>
+        <input type="text" id="daoName" name="daoName" required>
+        <div class="error-message" id="daoNameError"></div>
+    </div>
+
+    <!-- 修行年限 -->
+    <div class="form-group">
+        <label for="practiceYears">修行年限：</label>
+        <input type="number" id="practiceYears" name="practiceYears" min="0" required>
+        <div class="error-message" id="practiceYearsError"></div>
+    </div>
+
+    <!-- 感兴趣方向 -->
+    <div class="form-group">
+        <label for="interest">感兴趣方向：</label>
+        <select id="interest" name="interest" required>
+            <option value="">请选择</option>
+            <option value="经典研读">经典研读</option>
+            <option value="养生之道">养生之道</option>
+            <option value="内丹修炼">内丹修炼</option>
+            <option value="易学研究">易学研究</option>
+            <option value="道教科仪">道教科仪</option>
+        </select>
+        <div class="error-message" id="interestError"></div>
+    </div>
+
+    <button type="submit">提交注册</button>
+</form>
+
+<div id="successMessage" class="success-message">
+    注册成功！欢迎加入易水学派。
+</div> 

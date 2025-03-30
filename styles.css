@@ -1,0 +1,194 @@
+/* 基础样式 */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 导航栏 */
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* 首页大图 */
+.hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+/* 特色模块 */
+.features {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.features .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.feature {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.feature h2 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+/* 添加媒体查询 */
+@media (max-width: 768px) {
+    /* 导航栏 */
+    .navbar .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .navbar .nav-links.active {
+        display: block;
+    }
+
+    .navbar .nav-links li {
+        display: block;
+        margin: 0;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navbar .nav-links a {
+        display: block;
+        padding: 1rem;
+    }
+
+    /* 汉堡菜单 */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    .hamburger .line {
+        width: 25px;
+        height: 3px;
+        background: #333;
+        margin: 5px 0;
+    }
+
+    /* 文字大小 */
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* 图片布局 */
+    .features .container {
+        flex-direction: column;
+    }
+
+    .feature {
+        margin-bottom: 1rem;
+    }
+
+    /* 首页大图 */
+    .hero {
+        height: 40vh;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+}
+
+/* 添加汉堡菜单图标 */
+<button class="hamburger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</button> 

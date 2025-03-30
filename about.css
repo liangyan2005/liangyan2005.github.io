@@ -1,0 +1,94 @@
+/* 基础样式 */
+body {
+    font-family: 'Noto Serif SC', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f5f5f5;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* 水墨背景 */
+.ink-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('ink-bg.png') center/cover no-repeat;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+/* 通用卡片样式 */
+.timeline-card,
+.philosophy-card,
+.mentor-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    backdrop-filter: blur(5px);
+}
+
+/* 时间轴 */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #333;
+}
+
+.timeline-card {
+    position: relative;
+    margin-left: 2rem;
+}
+
+.timeline-card::before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 1rem;
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    border: 3px solid #333;
+    border-radius: 50%;
+}
+
+/* 核心思想 */
+.philosophy-card {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.philosophy-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.philosophy-card li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.philosophy-card li:: 

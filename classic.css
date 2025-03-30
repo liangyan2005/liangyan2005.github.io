@@ -1,0 +1,31 @@
+.waterfall-grid {
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+.classic-item {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filter-bar {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.filter-bar button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-bar button.active {
+    background: #007bff;
+    color: #fff;
+} 
